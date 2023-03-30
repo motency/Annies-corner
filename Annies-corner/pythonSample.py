@@ -1,0 +1,1 @@
+print("James's head is not bald")
