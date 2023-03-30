@@ -1,0 +1,38 @@
+audio {
+    margin: 15px;
+}
+
+h1 {
+    color:maroon;
+}
+
+img {
+    margin: 20px;
+  }
+
+p  {
+    font-style: oblique;
+    margin: 20px;
+}
+
+table {
+    margin: 20px;
+}
+
+#europa {
+    margin: 100px;
+    opacity:0.7;
+    transform: rotate(200deg);
+}
+
+#first-website {
+    color:rgba(166, 166, 166, 0.994)
+}
+
+#navbar-brand {
+    color:aliceblue
+}
+
+#second {
+    color:blueviolet;
+}
