@@ -1,38 +1,43 @@
-audio {
-    margin: 15px;
-}
+body {
+  background-color: #737373;
+  margin: 20px;
+  padding: 20px;
+  font-family: Georgia; }
 
 h1 {
-    color:maroon;
-}
+  color: #956ab8; }
 
-img {
-    margin: 20px;
-  }
+h3 {
+  color: #e5bddf; }
 
-p  {
-    font-style: oblique;
-    margin: 20px;
-}
+label {
+  color: #737373; }
 
-table {
-    margin: 20px;
-}
+p {
+  color: #737373; }
 
-#europa {
-    margin: 100px;
-    opacity:0.7;
-    transform: rotate(200deg);
-}
+th {
+  color: #737373; }
 
-#first-website {
-    color:rgba(166, 166, 166, 0.994)
-}
+.h3 {
+  color: #956ab8; }
+
+#check-self {
+  color: #ff0077; }
+
+#ex {
+  color: #ff0077; }
+
+#navbar-bg {
+  background-color: #956ab8; }
 
 #navbar-brand {
-    color:aliceblue
-}
+  color: #0080ff; }
 
 #second {
-    color:blueviolet;
-}
+  color: #72b87b; }
+
+#welcome {
+  color: #dbf8c7; }
+
+/*# sourceMappingURL=index_smartass.css.map */
