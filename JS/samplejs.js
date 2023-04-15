@@ -4,12 +4,12 @@ function changetitle() {
     const d = new Date();
     var dd = d.getMinutes();
     b.innerText = dd;
-    }
+}
 
 function disappear() {
     let e = document.getElementById("erase");
     e.style.display = "none";
-    }
+}
 
 function countdownTen() {
     let countdownList = document.getElementById("countdown-list")
@@ -25,7 +25,7 @@ function displayWord() {
     const words = ["pie", "diplomat", "compound", "punish", "precede"];
     const selectedWord = words[Math.floor(Math.random() * words.length)];
     const display = [];
-    for (var i=0; i < selectedWord.length; i++) {
+    for (let i=0; i < selectedWord.length; i++) {
       display[i] = "_";
     }
 
@@ -38,7 +38,7 @@ function checkGuess() {
     const selectedWord = document.getElementById("selectedWord").dataset.word;
     const display = document.getElementById("selectedWord").textContent.split(" ");
     let correctGuess = false;
-    for (var i = 0; i < selectedWord.length; i++) {
+    for (let i = 0; i < selectedWord.length; i++) {
         if (selectedWord.includes(guess)) {
             if (guess === selectedWord[i]) {
                 display[i] = guess;
@@ -52,6 +52,18 @@ function checkGuess() {
     } else {
         document.getElementById("result").textContent = "Incorrect. Try again.";
     }
+}
+
+function parseArray(arrImPirate) {
+    return arrImPirate.sort();
+}
+
+function sortUserInput() {
+    let userInput = document.getElementById("userInput").value;
+    let numberArray = userInput.split(",").map(Number);
+    console.log(numberArray);
+    let sortedArray = parseArray(numberArray);
+    document.getElementById("output").innerHTML = sortedArray;
 }
 
 displayWord();
