@@ -17,6 +17,10 @@ body {
     font-family: Georgia;
 }
 
+footer {
+    background-color: $fancy;
+}
+
 h1 {
     color: $primary-color;
 }
@@ -33,6 +37,21 @@ p {
     color: $greystone;
 }
 
+p::first-letter {
+    color: $black;
+    font-family: serif;
+    font-size: 36px;
+    line-height: 1;
+    padding-top: 0.2em;
+    padding-left: 0.1em;
+    float: unset;
+    margin-right: 0.02em;
+}
+
+span {
+    color: $greystone;
+}
+
 th {
     color: $greystone;
 }
@@ -43,6 +62,10 @@ th {
 
 #check-self {
     color: $FIYA-ROSE;
+}
+
+#columns {
+    color: $bright-blue; 
 }
 
 #ex {
