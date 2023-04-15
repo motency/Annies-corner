@@ -4,6 +4,9 @@ body {
   padding: 20px;
   font-family: Georgia; }
 
+footer {
+  background-color: #e5bddf; }
+
 h1 {
   color: #956ab8; }
 
@@ -16,6 +19,19 @@ label {
 p {
   color: #737373; }
 
+p::first-letter {
+  color: #000000;
+  font-family: serif;
+  font-size: 36px;
+  line-height: 1;
+  padding-top: 0.2em;
+  padding-left: 0.1em;
+  float: unset;
+  margin-right: 0.02em; }
+
+span {
+  color: #737373; }
+
 th {
   color: #737373; }
 
@@ -24,6 +40,9 @@ th {
 
 #check-self {
   color: #ff0077; }
+
+#columns {
+  color: #0080ff; }
 
 #ex {
   color: #ff0077; }
