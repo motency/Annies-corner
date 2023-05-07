@@ -126,4 +126,35 @@ function mapLoad(){
     map.on('click', onMapClick);
 }
 
+//Ochre functions
+function loadXMLDoc() {
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            //document.getElementById("demo").innerHTML =this.responseText;
+            console.log(this.responseXML)
+            // myFunction(this.responseXML);
+            myFunction2(this.responseXML);
+        }
+    };
+    xmlhttp.open("GET", "https://ochre.lib.uchicago.edu/ochre?uuid=24fdf4f5-0426-4715-86f2-5ba7331ff093", true);
+    xmlhttp.send();
+
+}
+
+function myFunction2(xml) {
+    let txt = "";
+    let i;
+    let x = xml.getElementsByTagName("ochre");
+    for (i = 0; i< x.length; i++) {
+        txt += x[i].children[0].innerHTML + "---<br>";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+function myFunction3(xml) {
+    document.getElementById("demo").innerHTML =
+    xml.getElementsByTagName("metadata")[0].children[1].innerHTML;
+}
+
 displayWord();
